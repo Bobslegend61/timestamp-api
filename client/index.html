@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Timestamp Microserver</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="icon" href="favicon.gif" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h2>Api basejump: Time microserver</h2>
+            <div class="well">
+                <p>User stories:</p>
+                <ul>
+                    <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+                    <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+                    <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h4>Example usage:</h4>
+            <ul>
+                <li class="alert alert-danger">https://timestamp-ms.herokuapp.com/December%2015,%202015</li>
+                <li class="alert alert-danger">https://timestamp-ms.herokuapp.com/1450137600</li>
+            </ul>
+            <h4>Example output:</h4>
+            <ul>
+                <li class="alert alert-danger">{ "unix": 1450137600, "natural": "December 15, 2015" } </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

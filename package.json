@@ -1,7 +1,7 @@
 {
   "name": "microserver-timestamp",
   "version": "1.0.0",
-  "description": "A server that returns the actual date and unix timestamp when a vaid parameter is being passed into the url",
+  "description": "A server that returns the actual date and unix timestamp when a valid parameter is being passed into the url",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
