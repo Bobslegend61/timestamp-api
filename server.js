@@ -21,7 +21,6 @@ app.get("/:"+ encodeURIComponent("date"), function(req, res){
 
   if(date.getDate()){
     if(isNaN(checkParams)){
-      console.log("Correct");
       normal = date.toDateString();
       unix = Math.round(date.getTime()/1000);
     }else{
