@@ -14,7 +14,7 @@ app.get("/", function(req, res){
 // api for url parameter
 app.get("/:"+ encodeURIComponent("date"), function(req, res){
   var parameter = req.params.date;
-  var checkParams = isNaN(parameter)? parameter : Number(parameter);
+  var checkParams = isNaN(parameter)? parameter : Number(parameter * 1000);
   var date = new Date(checkParams);
   var normal;
   var unix;
@@ -25,7 +25,7 @@ app.get("/:"+ encodeURIComponent("date"), function(req, res){
       unix = Math.round(date.getTime()/1000);
     }else{
       normal = date.toDateString();
-      unix = date.getTime();
+      unix = date.getTime() / 1000;
     }
   }else{
     normal = null;
